@@ -162,6 +162,7 @@
 		A6D7BD0819756F4800B070D8 /* UIColor+SNColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SNColors.h"; sourceTree = "<group>"; };
 		A6D7BD0919756F4800B070D8 /* UIColor+SNColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SNColors.m"; sourceTree = "<group>"; };
 		A6DF547E1FF0A54000081527 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A6DF54801FF0A67100081527 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BA54E5D3197771ED0046B735 /* SNColoursScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNColoursScene.h; sourceTree = "<group>"; };
 		BA54E5D4197771ED0046B735 /* SNColoursScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNColoursScene.m; sourceTree = "<group>"; };
 		BA54E5D8197773D10046B735 /* Colours.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colours.csv; sourceTree = "<group>"; };
@@ -207,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				A6DF547E1FF0A54000081527 /* .gitignore */,
+				A6DF54801FF0A67100081527 /* README.md */,
 				A66422EA197015C800ABCC06 /* Sanskrit */,
 				A6642311197015C800ABCC06 /* SanskritTests */,
 				A66422E1197015C800ABCC06 /* Frameworks */,
