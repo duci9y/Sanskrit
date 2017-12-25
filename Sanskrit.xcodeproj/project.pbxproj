@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A62B2AD5197274D900B99304 /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = A62B2AD4197274D900B99304 /* Star.png */; };
+		A62B2AD71972A9BA00B99304 /* SNNumericInputView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62B2AD61972A9BA00B99304 /* SNNumericInputView_iPad.xib */; };
+		A62B2ADA1972B0D100B99304 /* SNNumericInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = A62B2AD91972B0D100B99304 /* SNNumericInputView.m */; };
+		A64AD4921976C0B8001D62C8 /* SNNumericInputView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64AD4911976C0B8001D62C8 /* SNNumericInputView_iPhone.xib */; };
+		A65B9863197A597B002E4BE8 /* AGSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A65B9862197A597B002E4BE8 /* AGSpriteButton.m */; };
+		A66422E3197015C800ABCC06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66422E2197015C800ABCC06 /* Foundation.framework */; };
+		A66422E5197015C800ABCC06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66422E4197015C800ABCC06 /* CoreGraphics.framework */; };
+		A66422E7197015C800ABCC06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66422E6197015C800ABCC06 /* UIKit.framework */; };
+		A66422E9197015C800ABCC06 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66422E8197015C800ABCC06 /* SpriteKit.framework */; };
+		A66422EF197015C800ABCC06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A66422ED197015C800ABCC06 /* InfoPlist.strings */; };
+		A66422F1197015C800ABCC06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A66422F0197015C800ABCC06 /* main.m */; };
+		A66422F5197015C800ABCC06 /* SNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A66422F4197015C800ABCC06 /* SNAppDelegate.m */; };
+		A66422F8197015C800ABCC06 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66422F6197015C800ABCC06 /* Main_iPhone.storyboard */; };
+		A66422FB197015C800ABCC06 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66422F9197015C800ABCC06 /* Main_iPad.storyboard */; };
+		A66422FE197015C800ABCC06 /* SNNumbersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66422FD197015C800ABCC06 /* SNNumbersViewController.m */; };
+		A6642301197015C800ABCC06 /* SNNumbersScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A6642300197015C800ABCC06 /* SNNumbersScene.m */; };
+		A6642303197015C800ABCC06 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = A6642302197015C800ABCC06 /* Spaceship.png */; };
+		A6642305197015C800ABCC06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6642304197015C800ABCC06 /* Images.xcassets */; };
+		A664230C197015C800ABCC06 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A664230B197015C800ABCC06 /* XCTest.framework */; };
+		A664230D197015C800ABCC06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66422E2197015C800ABCC06 /* Foundation.framework */; };
+		A664230E197015C800ABCC06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A66422E6197015C800ABCC06 /* UIKit.framework */; };
+		A6642316197015C800ABCC06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6642314197015C800ABCC06 /* InfoPlist.strings */; };
+		A6642318197015C800ABCC06 /* SanskritTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6642317197015C800ABCC06 /* SanskritTests.m */; };
+		A664233B1970336200ABCC06 /* _FBTweakBindObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = A66423231970336200ABCC06 /* _FBTweakBindObserver.m */; };
+		A664233C1970336200ABCC06 /* _FBTweakCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66423251970336200ABCC06 /* _FBTweakCategoryViewController.m */; };
+		A664233D1970336200ABCC06 /* _FBTweakCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66423271970336200ABCC06 /* _FBTweakCollectionViewController.m */; };
+		A664233E1970336200ABCC06 /* _FBTweakTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66423291970336200ABCC06 /* _FBTweakTableViewCell.m */; };
+		A664233F1970336200ABCC06 /* FBTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = A664232C1970336200ABCC06 /* FBTweak.m */; };
+		A66423401970336200ABCC06 /* FBTweakCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A664232E1970336200ABCC06 /* FBTweakCategory.m */; };
+		A66423411970336200ABCC06 /* FBTweakCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = A66423301970336200ABCC06 /* FBTweakCollection.m */; };
+		A66423421970336200ABCC06 /* FBTweakInline.m in Sources */ = {isa = PBXBuildFile; fileRef = A66423331970336200ABCC06 /* FBTweakInline.m */; };
+		A66423431970336200ABCC06 /* FBTweakShakeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A66423361970336200ABCC06 /* FBTweakShakeWindow.m */; };
+		A66423441970336200ABCC06 /* FBTweakStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A66423381970336200ABCC06 /* FBTweakStore.m */; };
+		A66423451970336200ABCC06 /* FBTweakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A664233A1970336200ABCC06 /* FBTweakViewController.m */; };
+		A664234919703A6500ABCC06 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A664234819703A6500ABCC06 /* CHCSVParser.m */; };
+		A689432F197597B200FDB8EA /* SNScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A689432E197597B200FDB8EA /* SNScene.m */; };
+		A68943321975996C00FDB8EA /* SNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68943311975996C00FDB8EA /* SNViewController.m */; };
+		A6B4281D1977025800C25364 /* SNScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4281C1977025800C25364 /* SNScoresViewController.m */; };
+		A6C60FE919731A6800946063 /* SNGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C60FE819731A6800946063 /* SNGameOverScene.m */; };
+		A6C9284F19704E45005ED836 /* Stars.sks in Resources */ = {isa = PBXBuildFile; fileRef = A6C9284D19704E45005ED836 /* Stars.sks */; };
+		A6C9285019704E45005ED836 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = A6C9284E19704E45005ED836 /* spark.png */; };
+		A6C9285D19706254005ED836 /* SNDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C9285C19706254005ED836 /* SNDataManager.m */; };
+		A6D3A875197409F9001558B8 /* SNMainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D3A874197409F9001558B8 /* SNMainScreenViewController.m */; };
+		A6D3A87819741869001558B8 /* SNJumbledScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D3A87719741869001558B8 /* SNJumbledScene.m */; };
+		A6D3A87B1974196F001558B8 /* SNDraggableNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D3A87A1974196F001558B8 /* SNDraggableNode.m */; };
+		A6D3A87D19741D88001558B8 /* Numbers.csv in Resources */ = {isa = PBXBuildFile; fileRef = A6D3A87C19741D88001558B8 /* Numbers.csv */; };
+		A6D3A88019742320001558B8 /* SNJumbledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D3A87F19742320001558B8 /* SNJumbledViewController.m */; };
+		A6D3A882197448F9001558B8 /* Sentences.csv in Resources */ = {isa = PBXBuildFile; fileRef = A6D3A881197448F9001558B8 /* Sentences.csv */; };
+		A6D3A88519744F92001558B8 /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D3A88419744F92001558B8 /* NSMutableArray+Shuffle.m */; };
+		A6D7BD0719756CB400B070D8 /* SNHeaderNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D7BD0619756CB400B070D8 /* SNHeaderNode.m */; };
+		A6D7BD0A19756F4800B070D8 /* UIColor+SNColors.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D7BD0919756F4800B070D8 /* UIColor+SNColors.m */; };
+		A6DF547F1FF0A54000081527 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A6DF547E1FF0A54000081527 /* .gitignore */; };
+		BA54E5D5197771ED0046B735 /* SNColoursScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BA54E5D4197771ED0046B735 /* SNColoursScene.m */; };
+		BA54E5D9197773D10046B735 /* Colours.csv in Resources */ = {isa = PBXBuildFile; fileRef = BA54E5D8197773D10046B735 /* Colours.csv */; };
+		BA54E5DC197778440046B735 /* SNColoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA54E5DB197778440046B735 /* SNColoursViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A664230F197015C800ABCC06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A66422D7197015C800ABCC06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A66422DE197015C800ABCC06;
+			remoteInfo = Sanskrit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A62B2AD4197274D900B99304 /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
+		A62B2AD61972A9BA00B99304 /* SNNumericInputView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNNumericInputView_iPad.xib; sourceTree = "<group>"; };
+		A62B2AD81972B0D100B99304 /* SNNumericInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNNumericInputView.h; sourceTree = "<group>"; };
+		A62B2AD91972B0D100B99304 /* SNNumericInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNNumericInputView.m; sourceTree = "<group>"; };
+		A64AD4911976C0B8001D62C8 /* SNNumericInputView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNNumericInputView_iPhone.xib; sourceTree = "<group>"; };
+		A65B9861197A597B002E4BE8 /* AGSpriteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGSpriteButton.h; sourceTree = "<group>"; };
+		A65B9862197A597B002E4BE8 /* AGSpriteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGSpriteButton.m; sourceTree = "<group>"; };
+		A66422DF197015C800ABCC06 /* Sanskrit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sanskrit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66422E2197015C800ABCC06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A66422E4197015C800ABCC06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A66422E6197015C800ABCC06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A66422E8197015C800ABCC06 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		A66422EC197015C800ABCC06 /* Sanskrit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sanskrit-Info.plist"; sourceTree = "<group>"; };
+		A66422EE197015C800ABCC06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A66422F0197015C800ABCC06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A66422F2197015C800ABCC06 /* Sanskrit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sanskrit-Prefix.pch"; sourceTree = "<group>"; };
+		A66422F3197015C800ABCC06 /* SNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNAppDelegate.h; sourceTree = "<group>"; };
+		A66422F4197015C800ABCC06 /* SNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNAppDelegate.m; sourceTree = "<group>"; };
+		A66422F7197015C800ABCC06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		A66422FA197015C800ABCC06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		A66422FC197015C800ABCC06 /* SNNumbersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNNumbersViewController.h; sourceTree = "<group>"; };
+		A66422FD197015C800ABCC06 /* SNNumbersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNNumbersViewController.m; sourceTree = "<group>"; };
+		A66422FF197015C800ABCC06 /* SNNumbersScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNNumbersScene.h; sourceTree = "<group>"; };
+		A6642300197015C800ABCC06 /* SNNumbersScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNNumbersScene.m; sourceTree = "<group>"; };
+		A6642302197015C800ABCC06 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		A6642304197015C800ABCC06 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A664230A197015C800ABCC06 /* SanskritTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanskritTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A664230B197015C800ABCC06 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A6642313197015C800ABCC06 /* SanskritTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SanskritTests-Info.plist"; sourceTree = "<group>"; };
+		A6642315197015C800ABCC06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A6642317197015C800ABCC06 /* SanskritTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SanskritTests.m; sourceTree = "<group>"; };
+		A66423221970336200ABCC06 /* _FBTweakBindObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FBTweakBindObserver.h; sourceTree = "<group>"; };
+		A66423231970336200ABCC06 /* _FBTweakBindObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FBTweakBindObserver.m; sourceTree = "<group>"; };
+		A66423241970336200ABCC06 /* _FBTweakCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FBTweakCategoryViewController.h; sourceTree = "<group>"; };
+		A66423251970336200ABCC06 /* _FBTweakCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FBTweakCategoryViewController.m; sourceTree = "<group>"; };
+		A66423261970336200ABCC06 /* _FBTweakCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FBTweakCollectionViewController.h; sourceTree = "<group>"; };
+		A66423271970336200ABCC06 /* _FBTweakCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FBTweakCollectionViewController.m; sourceTree = "<group>"; };
+		A66423281970336200ABCC06 /* _FBTweakTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _FBTweakTableViewCell.h; sourceTree = "<group>"; };
+		A66423291970336200ABCC06 /* _FBTweakTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _FBTweakTableViewCell.m; sourceTree = "<group>"; };
+		A664232A1970336200ABCC06 /* FBTweak-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBTweak-Prefix.pch"; sourceTree = "<group>"; };
+		A664232B1970336200ABCC06 /* FBTweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweak.h; sourceTree = "<group>"; };
+		A664232C1970336200ABCC06 /* FBTweak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweak.m; sourceTree = "<group>"; };
+		A664232D1970336200ABCC06 /* FBTweakCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakCategory.h; sourceTree = "<group>"; };
+		A664232E1970336200ABCC06 /* FBTweakCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweakCategory.m; sourceTree = "<group>"; };
+		A664232F1970336200ABCC06 /* FBTweakCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakCollection.h; sourceTree = "<group>"; };
+		A66423301970336200ABCC06 /* FBTweakCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweakCollection.m; sourceTree = "<group>"; };
+		A66423311970336200ABCC06 /* FBTweakEnabled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakEnabled.h; sourceTree = "<group>"; };
+		A66423321970336200ABCC06 /* FBTweakInline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakInline.h; sourceTree = "<group>"; };
+		A66423331970336200ABCC06 /* FBTweakInline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweakInline.m; sourceTree = "<group>"; };
+		A66423341970336200ABCC06 /* FBTweakInlineInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakInlineInternal.h; sourceTree = "<group>"; };
+		A66423351970336200ABCC06 /* FBTweakShakeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakShakeWindow.h; sourceTree = "<group>"; };
+		A66423361970336200ABCC06 /* FBTweakShakeWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweakShakeWindow.m; sourceTree = "<group>"; };
+		A66423371970336200ABCC06 /* FBTweakStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakStore.h; sourceTree = "<group>"; };
+		A66423381970336200ABCC06 /* FBTweakStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweakStore.m; sourceTree = "<group>"; };
+		A66423391970336200ABCC06 /* FBTweakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakViewController.h; sourceTree = "<group>"; };
+		A664233A1970336200ABCC06 /* FBTweakViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweakViewController.m; sourceTree = "<group>"; };
+		A664234719703A6500ABCC06 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		A664234819703A6500ABCC06 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		A689432D197597B200FDB8EA /* SNScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNScene.h; sourceTree = "<group>"; };
+		A689432E197597B200FDB8EA /* SNScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNScene.m; sourceTree = "<group>"; };
+		A68943301975996C00FDB8EA /* SNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNViewController.h; sourceTree = "<group>"; };
+		A68943311975996C00FDB8EA /* SNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNViewController.m; sourceTree = "<group>"; };
+		A6B4281B1977025800C25364 /* SNScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNScoresViewController.h; sourceTree = "<group>"; };
+		A6B4281C1977025800C25364 /* SNScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNScoresViewController.m; sourceTree = "<group>"; };
+		A6C60FE719731A6800946063 /* SNGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNGameOverScene.h; sourceTree = "<group>"; };
+		A6C60FE819731A6800946063 /* SNGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNGameOverScene.m; sourceTree = "<group>"; };
+		A6C9284D19704E45005ED836 /* Stars.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Stars.sks; sourceTree = "<group>"; };
+		A6C9284E19704E45005ED836 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		A6C9285B19706254005ED836 /* SNDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNDataManager.h; sourceTree = "<group>"; };
+		A6C9285C19706254005ED836 /* SNDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNDataManager.m; sourceTree = "<group>"; };
+		A6D3A873197409F9001558B8 /* SNMainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNMainScreenViewController.h; sourceTree = "<group>"; };
+		A6D3A874197409F9001558B8 /* SNMainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNMainScreenViewController.m; sourceTree = "<group>"; };
+		A6D3A87619741869001558B8 /* SNJumbledScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNJumbledScene.h; sourceTree = "<group>"; };
+		A6D3A87719741869001558B8 /* SNJumbledScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNJumbledScene.m; sourceTree = "<group>"; };
+		A6D3A8791974196F001558B8 /* SNDraggableNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNDraggableNode.h; sourceTree = "<group>"; };
+		A6D3A87A1974196F001558B8 /* SNDraggableNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNDraggableNode.m; sourceTree = "<group>"; };
+		A6D3A87C19741D88001558B8 /* Numbers.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Numbers.csv; sourceTree = "<group>"; };
+		A6D3A87E19742320001558B8 /* SNJumbledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNJumbledViewController.h; sourceTree = "<group>"; };
+		A6D3A87F19742320001558B8 /* SNJumbledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNJumbledViewController.m; sourceTree = "<group>"; };
+		A6D3A881197448F9001558B8 /* Sentences.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sentences.csv; sourceTree = "<group>"; };
+		A6D3A88319744F92001558B8 /* NSMutableArray+Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffle.h"; sourceTree = "<group>"; };
+		A6D3A88419744F92001558B8 /* NSMutableArray+Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffle.m"; sourceTree = "<group>"; };
+		A6D7BD0519756CB400B070D8 /* SNHeaderNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNHeaderNode.h; sourceTree = "<group>"; };
+		A6D7BD0619756CB400B070D8 /* SNHeaderNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNHeaderNode.m; sourceTree = "<group>"; };
+		A6D7BD0819756F4800B070D8 /* UIColor+SNColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SNColors.h"; sourceTree = "<group>"; };
+		A6D7BD0919756F4800B070D8 /* UIColor+SNColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SNColors.m"; sourceTree = "<group>"; };
+		A6DF547E1FF0A54000081527 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BA54E5D3197771ED0046B735 /* SNColoursScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNColoursScene.h; sourceTree = "<group>"; };
+		BA54E5D4197771ED0046B735 /* SNColoursScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNColoursScene.m; sourceTree = "<group>"; };
+		BA54E5D8197773D10046B735 /* Colours.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colours.csv; sourceTree = "<group>"; };
+		BA54E5DA197778440046B735 /* SNColoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNColoursViewController.h; sourceTree = "<group>"; };
+		BA54E5DB197778440046B735 /* SNColoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNColoursViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A66422DC197015C800ABCC06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66422E5197015C800ABCC06 /* CoreGraphics.framework in Frameworks */,
+				A66422E7197015C800ABCC06 /* UIKit.framework in Frameworks */,
+				A66422E9197015C800ABCC06 /* SpriteKit.framework in Frameworks */,
+				A66422E3197015C800ABCC06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6642307197015C800ABCC06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A664230C197015C800ABCC06 /* XCTest.framework in Frameworks */,
+				A664230E197015C800ABCC06 /* UIKit.framework in Frameworks */,
+				A664230D197015C800ABCC06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A65B9860197A597B002E4BE8 /* AGSpriteButton */ = {
+			isa = PBXGroup;
+			children = (
+				A65B9861197A597B002E4BE8 /* AGSpriteButton.h */,
+				A65B9862197A597B002E4BE8 /* AGSpriteButton.m */,
+			);
+			path = AGSpriteButton;
+			sourceTree = "<group>";
+		};
+		A66422D6197015C800ABCC06 = {
+			isa = PBXGroup;
+			children = (
+				A6DF547E1FF0A54000081527 /* .gitignore */,
+				A66422EA197015C800ABCC06 /* Sanskrit */,
+				A6642311197015C800ABCC06 /* SanskritTests */,
+				A66422E1197015C800ABCC06 /* Frameworks */,
+				A66422E0197015C800ABCC06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A66422E0197015C800ABCC06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A66422DF197015C800ABCC06 /* Sanskrit.app */,
+				A664230A197015C800ABCC06 /* SanskritTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A66422E1197015C800ABCC06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A65B9860197A597B002E4BE8 /* AGSpriteButton */,
+				A664234619703A6500ABCC06 /* CHCSVParser */,
+				A66423211970336200ABCC06 /* FBTweak */,
+				A66422E2197015C800ABCC06 /* Foundation.framework */,
+				A66422E4197015C800ABCC06 /* CoreGraphics.framework */,
+				A66422E6197015C800ABCC06 /* UIKit.framework */,
+				A66422E8197015C800ABCC06 /* SpriteKit.framework */,
+				A664230B197015C800ABCC06 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A66422EA197015C800ABCC06 /* Sanskrit */ = {
+			isa = PBXGroup;
+			children = (
+				A66422F3197015C800ABCC06 /* SNAppDelegate.h */,
+				A66422F4197015C800ABCC06 /* SNAppDelegate.m */,
+				A66422F6197015C800ABCC06 /* Main_iPhone.storyboard */,
+				A66422F9197015C800ABCC06 /* Main_iPad.storyboard */,
+				A6D3A873197409F9001558B8 /* SNMainScreenViewController.h */,
+				A6D3A874197409F9001558B8 /* SNMainScreenViewController.m */,
+				A62B2AD61972A9BA00B99304 /* SNNumericInputView_iPad.xib */,
+				A64AD4911976C0B8001D62C8 /* SNNumericInputView_iPhone.xib */,
+				A62B2AD81972B0D100B99304 /* SNNumericInputView.h */,
+				A62B2AD91972B0D100B99304 /* SNNumericInputView.m */,
+				A68943301975996C00FDB8EA /* SNViewController.h */,
+				A68943311975996C00FDB8EA /* SNViewController.m */,
+				A66422FC197015C800ABCC06 /* SNNumbersViewController.h */,
+				A66422FD197015C800ABCC06 /* SNNumbersViewController.m */,
+				A6D3A87E19742320001558B8 /* SNJumbledViewController.h */,
+				A6D3A87F19742320001558B8 /* SNJumbledViewController.m */,
+				BA54E5DA197778440046B735 /* SNColoursViewController.h */,
+				BA54E5DB197778440046B735 /* SNColoursViewController.m */,
+				A6B4281B1977025800C25364 /* SNScoresViewController.h */,
+				A6B4281C1977025800C25364 /* SNScoresViewController.m */,
+				A689432D197597B200FDB8EA /* SNScene.h */,
+				A689432E197597B200FDB8EA /* SNScene.m */,
+				A66422FF197015C800ABCC06 /* SNNumbersScene.h */,
+				A6642300197015C800ABCC06 /* SNNumbersScene.m */,
+				A6D3A87619741869001558B8 /* SNJumbledScene.h */,
+				A6D3A87719741869001558B8 /* SNJumbledScene.m */,
+				BA54E5D3197771ED0046B735 /* SNColoursScene.h */,
+				BA54E5D4197771ED0046B735 /* SNColoursScene.m */,
+				A6C60FE719731A6800946063 /* SNGameOverScene.h */,
+				A6C60FE819731A6800946063 /* SNGameOverScene.m */,
+				A6D7BD0519756CB400B070D8 /* SNHeaderNode.h */,
+				A6D7BD0619756CB400B070D8 /* SNHeaderNode.m */,
+				A6D7BD0819756F4800B070D8 /* UIColor+SNColors.h */,
+				A6D7BD0919756F4800B070D8 /* UIColor+SNColors.m */,
+				A6D3A88319744F92001558B8 /* NSMutableArray+Shuffle.h */,
+				A6D3A88419744F92001558B8 /* NSMutableArray+Shuffle.m */,
+				A6D3A8791974196F001558B8 /* SNDraggableNode.h */,
+				A6D3A87A1974196F001558B8 /* SNDraggableNode.m */,
+				A6C9285B19706254005ED836 /* SNDataManager.h */,
+				A6C9285C19706254005ED836 /* SNDataManager.m */,
+				A6642302197015C800ABCC06 /* Spaceship.png */,
+				A6C9284D19704E45005ED836 /* Stars.sks */,
+				A6C9284E19704E45005ED836 /* spark.png */,
+				A62B2AD4197274D900B99304 /* Star.png */,
+				A6D3A87C19741D88001558B8 /* Numbers.csv */,
+				A6D3A881197448F9001558B8 /* Sentences.csv */,
+				BA54E5D8197773D10046B735 /* Colours.csv */,
+				A6642304197015C800ABCC06 /* Images.xcassets */,
+				A66422EB197015C800ABCC06 /* Supporting Files */,
+			);
+			path = Sanskrit;
+			sourceTree = "<group>";
+		};
+		A66422EB197015C800ABCC06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A66422EC197015C800ABCC06 /* Sanskrit-Info.plist */,
+				A66422ED197015C800ABCC06 /* InfoPlist.strings */,
+				A66422F0197015C800ABCC06 /* main.m */,
+				A66422F2197015C800ABCC06 /* Sanskrit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6642311197015C800ABCC06 /* SanskritTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6642317197015C800ABCC06 /* SanskritTests.m */,
+				A6642312197015C800ABCC06 /* Supporting Files */,
+			);
+			path = SanskritTests;
+			sourceTree = "<group>";
+		};
+		A6642312197015C800ABCC06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6642313197015C800ABCC06 /* SanskritTests-Info.plist */,
+				A6642314197015C800ABCC06 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A66423211970336200ABCC06 /* FBTweak */ = {
+			isa = PBXGroup;
+			children = (
+				A66423221970336200ABCC06 /* _FBTweakBindObserver.h */,
+				A66423231970336200ABCC06 /* _FBTweakBindObserver.m */,
+				A66423241970336200ABCC06 /* _FBTweakCategoryViewController.h */,
+				A66423251970336200ABCC06 /* _FBTweakCategoryViewController.m */,
+				A66423261970336200ABCC06 /* _FBTweakCollectionViewController.h */,
+				A66423271970336200ABCC06 /* _FBTweakCollectionViewController.m */,
+				A66423281970336200ABCC06 /* _FBTweakTableViewCell.h */,
+				A66423291970336200ABCC06 /* _FBTweakTableViewCell.m */,
+				A664232A1970336200ABCC06 /* FBTweak-Prefix.pch */,
+				A664232B1970336200ABCC06 /* FBTweak.h */,
+				A664232C1970336200ABCC06 /* FBTweak.m */,
+				A664232D1970336200ABCC06 /* FBTweakCategory.h */,
+				A664232E1970336200ABCC06 /* FBTweakCategory.m */,
+				A664232F1970336200ABCC06 /* FBTweakCollection.h */,
+				A66423301970336200ABCC06 /* FBTweakCollection.m */,
+				A66423311970336200ABCC06 /* FBTweakEnabled.h */,
+				A66423321970336200ABCC06 /* FBTweakInline.h */,
+				A66423331970336200ABCC06 /* FBTweakInline.m */,
+				A66423341970336200ABCC06 /* FBTweakInlineInternal.h */,
+				A66423351970336200ABCC06 /* FBTweakShakeWindow.h */,
+				A66423361970336200ABCC06 /* FBTweakShakeWindow.m */,
+				A66423371970336200ABCC06 /* FBTweakStore.h */,
+				A66423381970336200ABCC06 /* FBTweakStore.m */,
+				A66423391970336200ABCC06 /* FBTweakViewController.h */,
+				A664233A1970336200ABCC06 /* FBTweakViewController.m */,
+			);
+			path = FBTweak;
+			sourceTree = "<group>";
+		};
+		A664234619703A6500ABCC06 /* CHCSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				A664234719703A6500ABCC06 /* CHCSVParser.h */,
+				A664234819703A6500ABCC06 /* CHCSVParser.m */,
+			);
+			path = CHCSVParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A66422DE197015C800ABCC06 /* Sanskrit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A664231B197015C800ABCC06 /* Build configuration list for PBXNativeTarget "Sanskrit" */;
+			buildPhases = (
+				A66422DB197015C800ABCC06 /* Sources */,
+				A66422DC197015C800ABCC06 /* Frameworks */,
+				A66422DD197015C800ABCC06 /* Resources */,
+				50524F424C454D533F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sanskrit;
+			productName = Sanskrit;
+			productReference = A66422DF197015C800ABCC06 /* Sanskrit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6642309197015C800ABCC06 /* SanskritTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A664231E197015C800ABCC06 /* Build configuration list for PBXNativeTarget "SanskritTests" */;
+			buildPhases = (
+				A6642306197015C800ABCC06 /* Sources */,
+				A6642307197015C800ABCC06 /* Frameworks */,
+				A6642308197015C800ABCC06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6642310197015C800ABCC06 /* PBXTargetDependency */,
+			);
+			name = SanskritTests;
+			productName = SanskritTests;
+			productReference = A664230A197015C800ABCC06 /* SanskritTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A66422D7197015C800ABCC06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = duci9y;
+				TargetAttributes = {
+					A6642309197015C800ABCC06 = {
+						TestTargetID = A66422DE197015C800ABCC06;
+					};
+				};
+			};
+			buildConfigurationList = A66422DA197015C800ABCC06 /* Build configuration list for PBXProject "Sanskrit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A66422D6197015C800ABCC06;
+			productRefGroup = A66422E0197015C800ABCC06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A66422DE197015C800ABCC06 /* Sanskrit */,
+				A6642309197015C800ABCC06 /* SanskritTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A66422DD197015C800ABCC06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62B2AD5197274D900B99304 /* Star.png in Resources */,
+				A6642303197015C800ABCC06 /* Spaceship.png in Resources */,
+				A62B2AD71972A9BA00B99304 /* SNNumericInputView_iPad.xib in Resources */,
+				A6D3A882197448F9001558B8 /* Sentences.csv in Resources */,
+				A6D3A87D19741D88001558B8 /* Numbers.csv in Resources */,
+				A6642305197015C800ABCC06 /* Images.xcassets in Resources */,
+				A66422FB197015C800ABCC06 /* Main_iPad.storyboard in Resources */,
+				A6C9285019704E45005ED836 /* spark.png in Resources */,
+				A6DF547F1FF0A54000081527 /* .gitignore in Resources */,
+				A66422F8197015C800ABCC06 /* Main_iPhone.storyboard in Resources */,
+				A66422EF197015C800ABCC06 /* InfoPlist.strings in Resources */,
+				BA54E5D9197773D10046B735 /* Colours.csv in Resources */,
+				A64AD4921976C0B8001D62C8 /* SNNumericInputView_iPhone.xib in Resources */,
+				A6C9284F19704E45005ED836 /* Stars.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6642308197015C800ABCC06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6642316197015C800ABCC06 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50524F424C454D533F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Library/JailCoder/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Library/JailCoder/Entitlements/Entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A66422DB197015C800ABCC06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66423411970336200ABCC06 /* FBTweakCollection.m in Sources */,
+				A6B4281D1977025800C25364 /* SNScoresViewController.m in Sources */,
+				A66423421970336200ABCC06 /* FBTweakInline.m in Sources */,
+				A6D3A87B1974196F001558B8 /* SNDraggableNode.m in Sources */,
+				A664233E1970336200ABCC06 /* _FBTweakTableViewCell.m in Sources */,
+				A664233D1970336200ABCC06 /* _FBTweakCollectionViewController.m in Sources */,
+				A65B9863197A597B002E4BE8 /* AGSpriteButton.m in Sources */,
+				A664233C1970336200ABCC06 /* _FBTweakCategoryViewController.m in Sources */,
+				A6D3A88019742320001558B8 /* SNJumbledViewController.m in Sources */,
+				A66422F1197015C800ABCC06 /* main.m in Sources */,
+				A6C60FE919731A6800946063 /* SNGameOverScene.m in Sources */,
+				A66423441970336200ABCC06 /* FBTweakStore.m in Sources */,
+				A6C9285D19706254005ED836 /* SNDataManager.m in Sources */,
+				A664233B1970336200ABCC06 /* _FBTweakBindObserver.m in Sources */,
+				A68943321975996C00FDB8EA /* SNViewController.m in Sources */,
+				A6D7BD0A19756F4800B070D8 /* UIColor+SNColors.m in Sources */,
+				A66423431970336200ABCC06 /* FBTweakShakeWindow.m in Sources */,
+				A66422FE197015C800ABCC06 /* SNNumbersViewController.m in Sources */,
+				A66423401970336200ABCC06 /* FBTweakCategory.m in Sources */,
+				A6D3A88519744F92001558B8 /* NSMutableArray+Shuffle.m in Sources */,
+				A66422F5197015C800ABCC06 /* SNAppDelegate.m in Sources */,
+				A664234919703A6500ABCC06 /* CHCSVParser.m in Sources */,
+				A62B2ADA1972B0D100B99304 /* SNNumericInputView.m in Sources */,
+				A6D3A875197409F9001558B8 /* SNMainScreenViewController.m in Sources */,
+				A689432F197597B200FDB8EA /* SNScene.m in Sources */,
+				A6642301197015C800ABCC06 /* SNNumbersScene.m in Sources */,
+				A664233F1970336200ABCC06 /* FBTweak.m in Sources */,
+				BA54E5DC197778440046B735 /* SNColoursViewController.m in Sources */,
+				A66423451970336200ABCC06 /* FBTweakViewController.m in Sources */,
+				A6D3A87819741869001558B8 /* SNJumbledScene.m in Sources */,
+				BA54E5D5197771ED0046B735 /* SNColoursScene.m in Sources */,
+				A6D7BD0719756CB400B070D8 /* SNHeaderNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6642306197015C800ABCC06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6642318197015C800ABCC06 /* SanskritTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6642310197015C800ABCC06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A66422DE197015C800ABCC06 /* Sanskrit */;
+			targetProxy = A664230F197015C800ABCC06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A66422ED197015C800ABCC06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A66422EE197015C800ABCC06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A66422F6197015C800ABCC06 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A66422F7197015C800ABCC06 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A66422F9197015C800ABCC06 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A66422FA197015C800ABCC06 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		A6642314197015C800ABCC06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6642315197015C800ABCC06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6642319197015C800ABCC06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A664231A197015C800ABCC06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A664231C197015C800ABCC06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sanskrit/Sanskrit-Prefix.pch";
+				INFOPLIST_FILE = "Sanskrit/Sanskrit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A664231D197015C800ABCC06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sanskrit/Sanskrit-Prefix.pch";
+				INFOPLIST_FILE = "Sanskrit/Sanskrit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A664231F197015C800ABCC06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sanskrit.app/Sanskrit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sanskrit/Sanskrit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SanskritTests/SanskritTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A6642320197015C800ABCC06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sanskrit.app/Sanskrit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sanskrit/Sanskrit-Prefix.pch";
+				INFOPLIST_FILE = "SanskritTests/SanskritTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A66422DA197015C800ABCC06 /* Build configuration list for PBXProject "Sanskrit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6642319197015C800ABCC06 /* Debug */,
+				A664231A197015C800ABCC06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A664231B197015C800ABCC06 /* Build configuration list for PBXNativeTarget "Sanskrit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A664231C197015C800ABCC06 /* Debug */,
+				A664231D197015C800ABCC06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A664231E197015C800ABCC06 /* Build configuration list for PBXNativeTarget "SanskritTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A664231F197015C800ABCC06 /* Debug */,
+				A6642320197015C800ABCC06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A66422D7197015C800ABCC06 /* Project object */;
+}

@@ -1,0 +1,44 @@
+{
+  "images" : [
+    {
+      "resizing" : {
+        "mode" : "3-part-horizontal",
+        "center" : {
+          "mode" : "fill",
+          "width" : 16
+        },
+        "capInsets" : {
+          "right" : 8,
+          "left" : 8
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "Stripes.png",
+      "scale" : "1x"
+    },
+    {
+      "resizing" : {
+        "mode" : "3-part-horizontal",
+        "center" : {
+          "mode" : "fill",
+          "width" : 32
+        },
+        "capInsets" : {
+          "right" : 16,
+          "left" : 16
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "Stripes@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
