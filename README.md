@@ -15,7 +15,7 @@ I learnt a lot about:
  2. **How to use FBTweak to change constants on the fly without recompiling.**
  The organizer of this competition was the national education board back home
  in India, so it was highly regarded by the school. The administration and my
- supervisor wanted it to be ~perfect~ so they made me tweak things like colors
+ supervisor wanted it to be \~perfect\~ so they made me tweak things like colors
  and border radii a lot.
 
  3. **Returns on an investment may not be realized until much later.** I saw
